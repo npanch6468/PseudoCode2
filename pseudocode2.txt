@@ -1,0 +1,26 @@
+1. Process customer record
+Prompt user Name -> store in variable name
+Prompt purchase amount -> store in variable purchaseAmount
+Prompt taxCode -> store in variable taxCode
+CASE OF taxCode
+	0: salesTax = 0
+	1: salesTax = .03 * purchaseAmount
+	2: salesTax = .05 * purchaseAmount
+	3: salesTax = .07 * purchaseAmount
+ENDCASE
+totalAmount = salesTax + purchaseAmount
+Display name
+Display purchaseAmount
+Display salesTax
+Display totalAmount
+
+2.Calculate employee's pay
+Prompt employee # -> store in variable employee#
+Prompt pay rate -> store in variable payRate
+Prompt # of hours worked in week -> store in variable hours
+if hours > 60 or payRate > 25
+	print("out of range")
+else if hours < 35
+	print(payRate * hours)
+else if hours > 35
+	print((payRate * 35) + ((hours - 35) * 1.5 * payrate)
